@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đọc sách trên nền đen - Toàn màn hình</title>
+    <style>
+        /* Thiết lập nền đen và màu chữ sáng */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #E0E0E0;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Tăng cỡ chữ cho dễ đọc */
+        body {
+            font-size: 20px;
+        }
+
+        /* Tiêu đề sách */
+        h1 {
+            color:  #E0E0E0;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        /* Đoạn văn bản */
+        p {
+            margin: 20px 0;
+            font-size: 22px;
+        }
+
+        /* Định dạng các tiêu đề nhỏ */
+        h2, h3 {
+            color:  #E0E0E0;
+            margin-top: 30px;
+        }
+
+        /* Tăng kích thước khung đọc và làm nó toàn màn hình */
+        .reading-container {
+            width: 100%;
+            margin: auto;
+            padding: 40px;
+            background-color: #1F1B24;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Style cho audio control */
+        .audio-control {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="reading-container">
+    <h1>Chiến Binh Cầu Vòng</h1>
+    <h2>Chương 1: Mười học sinh mới</h2>
+
+    <p>Buổi sáng hôm ấy, hồi vẫn còn bé, tôi ngồi trên chiếc ghế dài trong sân trường. Dưới tán cây filicium già nua rợp bóng. Cha tôi ngồi bên, hai tay ôm lấy vai tôi, gật đầu mỉm cười chào những ông bố bà mẹ khác đang ngồi cạnh con mình trên chiếc ghế dài đối diện. Hôm nay là một ngày trọng đại: ngày đầu tiên đi học.</p>
+
+    <p>Cuối những chiếc ghế dài ấy là cánh cửa để ngỏ dẫn vào một lớp học trống trơn. Khung cửa cong queo. Thật ra, toàn bộ ngôi trường đang trong tình trạng ọp ẹp như thể nó sẽ đổ sập xuống bất kỳ lúc nào. Hai giáo viên đứng ở cửa cứ như hai vị chủ nhà đang chào đón khách đến dự tiệc. Một người đàn ông luống tuổi nét mặt điềm tĩnh, thầy hiệu trưởng K.A. Harfan Effendy Noor, còn gọi là thầy Harfan và một cô gái trẻ măng quấn jilbab - khăn trùm đầu, cô N.A. Muslimah Hafsari, hay cô Mus. Giống như cha tôi, hai người họ cũng đang mỉm cười.</p>
+  
+    <p>Nhưng nụ cười của cô Mus trông mới gượng gạo làm sao: cô đang lo lắng. Nét mặt cô căng thẳng và các cơ cứ rần rật một cách bồn chồn. Cô đếm đi đếm lại mãi số học sinh đang ngồi trên hàng ghế dài bên ngoài, lo lắng đến độ chẳng để ý gì tới mồ hôi đang vã xuống chảy cả vào mắt. Những giọt mồ hôi đua nhau rịn ra xung quanh mũi làm nhòe nhoẹt lớp phấn trang điểm, vạch những đường sọc loang lổ khắp mặt khiến trông giống như người hầu gái của nữ hoàng trong Dul Muluk, một vở kịch cổ của làng chúng tôi.</p>
+  
+    <p>“Chín em, mới có chín em thôi, thưa thầy, vẫn còn thiếu một,” cô nói với thầy hiệu trưởng giọng âu lo. Thầy hiệu trưởng Harfan đưa mắt sang cô với ánh nhìn trống rỗng.</p>
+
+    <!-- Thêm audio và nút play -->
+    <div class="audio-control">
+        <audio id="audioPlayer" controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Trình duyệt của bạn không hỗ trợ phát âm thanh.
+        </audio>
+    </div>
+</div>
+
+</body>
+</html>
